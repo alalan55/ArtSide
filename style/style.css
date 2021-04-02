@@ -380,11 +380,11 @@ main .fale-conosco .conteudo-fale-conosco .texto-enviando {
 }
 
 main .fale-conosco .conteudo-fale-conosco .texto-sucesso {
-  color: #ADFF2F;
+  color: #adff2f;
 }
 
 main .fale-conosco .conteudo-fale-conosco .texto-error {
-  color: #FF6347;
+  color: #ff6347;
 }
 
 main .fale-conosco .conteudo-fale-conosco form {
@@ -426,6 +426,7 @@ main .fale-conosco .conteudo-fale-conosco .btn-enviar {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  margin-bottom: 2em;
 }
 
 main .fale-conosco .conteudo-fale-conosco .btn-enviar button {
@@ -443,6 +444,12 @@ main .fale-conosco .conteudo-fale-conosco .btn-enviar button:hover {
   background: #fff;
   border: 1px solid #fff;
   color: black;
+}
+
+main .fale-conosco .conteudo-fale-conosco .fale-conosco-wpp {
+  text-decoration: none;
+  color: #adff2f;
+  border: 1px solid #adff2f;
 }
 
 footer {
