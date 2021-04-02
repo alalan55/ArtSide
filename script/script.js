@@ -90,4 +90,21 @@ mensagemDeSucesso = () => {
       }, 1000)
    }
 
+
+   fechaNavbar = () => {
+      let ul = document.querySelector("ul");
+      let check = document.querySelector("#check");
+      ul.style.left = "100%";
+      check.checked = false;
+    },
+    abreNavbar = () => {
+      let ul = document.querySelector("ul");
+      let check = document.querySelector("#check");
+      check.checked ? (ul.style.left = "0") : (ul.style.left = "100%");
+    },
+
+    scrollTop = () =>{
+       window.scrollTo(0,0);
+    }
+
 form.addEventListener("submit", formEnviado);
