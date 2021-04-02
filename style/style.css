@@ -452,6 +452,10 @@ main .fale-conosco .conteudo-fale-conosco .fale-conosco-wpp {
   border: 1px solid #adff2f;
 }
 
+main .fale-conosco .conteudo-fale-conosco .fale-conosco-wpp:hover {
+  color: #659719;
+}
+
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -473,8 +477,8 @@ footer .fas {
 }
 
 footer span {
-  -webkit-transition: .2s ease-in-out;
-  transition: .2s ease-in-out;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 @media screen and (max-width: 655px) {
@@ -541,7 +545,7 @@ footer span {
 
 @media screen and (max-width: 360px) {
   footer span {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

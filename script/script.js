@@ -51,7 +51,6 @@ const fazerRequisicao = async (valor) => {
    }
 
 }
-
 mensagemDeSucesso = () => {
    let intervalo = setInterval(() => {
       teveSucesso = true;
@@ -68,43 +67,38 @@ mensagemDeSucesso = () => {
       form.reset();
    }, 5000);
 },
+mensagemDeError = () => {
+   let intervalo = setInterval(() => {
+      mensagemError.style.display = "block";
+      mensagemEnviando.style.display = "none";
 
-   mensagemDeError = () => {
-      let intervalo = setInterval(() => {
-         mensagemError.style.display = "block";
-         mensagemEnviando.style.display = "none";
+   }, 1000);
 
-      }, 1000);
-
-      setTimeout(() => {
-         clearInterval(intervalo);
-         mensagemError.style.display = "none";
-         mensagemInteresse.style.display = "block";
-      }, 6000);
-   },
-
-   delay = () => {
-      setTimeout(() => {
-         mensagemEnviando.style.display = "block";
-         mensagemInteresse.style.display = "none";
-      }, 1000)
-   }
-
-
-   fechaNavbar = () => {
-      let ul = document.querySelector("ul");
-      let check = document.querySelector("#check");
-      ul.style.left = "100%";
-      check.checked = false;
-    },
-    abreNavbar = () => {
-      let ul = document.querySelector("ul");
-      let check = document.querySelector("#check");
-      check.checked ? (ul.style.left = "0") : (ul.style.left = "100%");
-    },
-
-    scroolTop = () =>{
-       window.scrollTo(0,0)
-    }
+   setTimeout(() => {
+      clearInterval(intervalo);
+      mensagemError.style.display = "none";
+      mensagemInteresse.style.display = "block";
+   }, 6000);
+},
+delay = () => {
+setTimeout(() => {
+mensagemEnviando.style.display = "block";
+mensagemInteresse.style.display = "none";
+}, 1000)
+}
+fechaNavbar = () => {
+let ul = document.querySelector("ul");
+let check = document.querySelector("#check");
+ul.style.left = "100%";
+check.checked = false;
+},
+abreNavbar = () => {
+let ul = document.querySelector("ul");
+let check = document.querySelector("#check");
+check.checked ? (ul.style.left = "0") : (ul.style.left = "100%");
+},
+scroolTop = () =>{
+window.scrollTo(0,0)
+}
 
 form.addEventListener("submit", formEnviado);
