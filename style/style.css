@@ -472,6 +472,11 @@ footer .fas {
   color: red;
 }
 
+footer span {
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
 @media screen and (max-width: 655px) {
   .textos-capa {
     padding: 1%;
@@ -531,6 +536,12 @@ footer .fas {
   }
   nav #check:checked ~ ul {
     left: 0;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  footer span {
+    font-size: .8rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
