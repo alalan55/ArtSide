@@ -383,7 +383,11 @@ main {
             .fale-conosco-wpp {
                 text-decoration: none;
                 color: #adff2f;
-               border: 1px solid #adff2f;
+                border: 1px solid #adff2f;
+                
+                &:hover{
+                    color:  #659719;
+                }
             }
         }
     }
@@ -402,8 +406,8 @@ footer {
     .fas {
         color: red;
     }
-    span{
-        transition: .2s ease-in-out;
+    span {
+        transition: 0.2s ease-in-out;
     }
 }
 
@@ -470,10 +474,10 @@ footer {
     }
 }
 
-@media screen and(max-width:360px){
-    footer{
-        span{
-            font-size: .8rem;
+@media screen and(max-width:360px) {
+    footer {
+        span {
+            font-size: 0.8rem;
         }
     }
 }
