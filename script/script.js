@@ -32,7 +32,7 @@ const formEnviado = (e) => {
 const fazerRequisicao = async (valor) => {
    try {
 
-      let response = await fetch(URL__DEPLOY, {
+      let response = await fetch(URL__LOCAL, {
          method: 'POST',
          mode: 'cors',
          headers: {
@@ -89,5 +89,22 @@ mensagemDeSucesso = () => {
          mensagemInteresse.style.display = "none";
       }, 1000)
    }
+
+
+   fechaNavbar = () => {
+      let ul = document.querySelector("ul");
+      let check = document.querySelector("#check");
+      ul.style.left = "100%";
+      check.checked = false;
+    },
+    abreNavbar = () => {
+      let ul = document.querySelector("ul");
+      let check = document.querySelector("#check");
+      check.checked ? (ul.style.left = "0") : (ul.style.left = "100%");
+    },
+
+    scrollTop = () =>{
+       window.scrollTo(0,0);
+    }
 
 form.addEventListener("submit", formEnviado);

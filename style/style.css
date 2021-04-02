@@ -65,6 +65,10 @@ body::-webkit-scrollbar-thumb {
   display: none;
 }
 
+.capa nav .logo {
+  cursor: pointer;
+}
+
 .capa nav .logo span {
   font-weight: 900;
   font-size: 1.6rem;
