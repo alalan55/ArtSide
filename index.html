@@ -148,22 +148,25 @@
                     <div class="texto-fale-conosco">
                         <h1>tem interesse em fazer novas artes? fale diretamente conosco</h1>
                     </div>
+                    <div class="texto-enviando">
+                        <h1>muito obrigado! estamos enviando o seu form...</h1>
+                    </div>
+                    <div class="texto-sucesso">
+                        <h1>seu form foi enviado! entraremos em contato</h1>
+                    </div>
+                    <div class="texto-error">
+                        <h1>opa, algo deu errado.. tente novamente em instantes.</h1>
+                    </div>
                     
-                    <form action="https://api.staticforms.xyz/submit" method="POST" id="form">
-                        <input type="hidden" name="accessKey" value="1a079171-8add-4ecf-9636-867940fa4dd0">
-                        <!-- <input type="hidden" name="redirectTo" value="#"> -->
-
-                        <input type="text" placeholder="Nome completo" name="name">
-                        <input type="email" placeholder="E-mail" name="email">
-                        <textarea name="message" id="" cols="30" rows="10" ></textarea>
+                    <form id="form">
+                        <input type="text" placeholder="Nome completo" name="name" id="nomeCompleto">
+                        <input type="email" placeholder="E-mail" name="email" id="email">
+                        <textarea name="message"  cols="30" rows="10"  id="mensagem"></textarea>
                         <div class="btn-enviar">
                             <button>ENVIAR</button>
                         </div>
                     </form>
-                    <!-- <div class="btn-enviar">
-                        <button>ENVIAR</button>
-                    </div> -->
-
+     
                 </div>
 
             </section>
@@ -172,10 +175,8 @@
         <footer>
             <span>&copy; ArtSide  2021 | desenvolvido por <a href="">Alan</a> <i class="fas fa-heart"></i></span>
         </footer>
-
     </div>
     
-
     <script src="./script/script.js"></script>
 </body>
 </html>

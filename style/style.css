@@ -371,6 +371,18 @@ main .fale-conosco .conteudo-fale-conosco .texto-fale-conosco {
   color: white;
 }
 
+main .fale-conosco .conteudo-fale-conosco .texto-enviando {
+  color: white;
+}
+
+main .fale-conosco .conteudo-fale-conosco .texto-sucesso {
+  color: #ADFF2F;
+}
+
+main .fale-conosco .conteudo-fale-conosco .texto-error {
+  color: #FF6347;
+}
+
 main .fale-conosco .conteudo-fale-conosco form {
   display: -webkit-box;
   display: -ms-flexbox;

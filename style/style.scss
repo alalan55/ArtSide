@@ -119,12 +119,8 @@ body {
 }
 
 main {
-    // height: 80vh;
-    // border: 1px solid red;
-
+    
     .conteudo-main {
-        //  border: 1px solid;
-        // height: 100%;
         height: 80vh;
         display: flex;
         background-color: black;
@@ -136,10 +132,8 @@ main {
             justify-content: center;
             align-items: center;
             overflow: hidden;
-            //  background-color: $grey;
 
             figure {
-                //   border: 1px solid black;
                 height: 100%;
                 width: 100%;
                 overflow: hidden;
@@ -326,7 +320,17 @@ main {
             .texto-fale-conosco {
                 color: white;
             }
-
+            .texto-enviando{
+                color: white;
+                // display: none;
+            }
+            .texto-sucesso{
+                color: #ADFF2F;
+            }
+            .texto-error{
+                color: #FF6347;
+            }
+           
             form {
                 //   border: 1px solid;
                 display: flex;
