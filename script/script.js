@@ -32,7 +32,7 @@ const formEnviado = (e) => {
 const fazerRequisicao = async (valor) => {
    try {
 
-      let response = await fetch(URL__LOCAL, {
+      let response = await fetch(URL__DEPLOY, {
          method: 'POST',
          mode: 'cors',
          headers: {
