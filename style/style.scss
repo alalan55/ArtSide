@@ -120,7 +120,6 @@ body {
 }
 
 main {
-    
     .conteudo-main {
         height: 80vh;
         display: flex;
@@ -314,6 +313,7 @@ main {
 
     .fale-conosco {
         background-color: $grey2;
+
         .conteudo-fale-conosco {
             text-align: center;
             padding: 4%;
@@ -321,17 +321,17 @@ main {
             .texto-fale-conosco {
                 color: white;
             }
-            .texto-enviando{
+            .texto-enviando {
                 color: white;
                 // display: none;
             }
-            .texto-sucesso{
-                color: #ADFF2F;
+            .texto-sucesso {
+                color: #adff2f;
             }
-            .texto-error{
-                color: #FF6347;
+            .texto-error {
+                color: #ff6347;
             }
-           
+
             form {
                 //   border: 1px solid;
                 display: flex;
@@ -359,10 +359,10 @@ main {
             .btn-enviar {
                 padding: 0 2% 0 0;
                 display: flex;
-                //  border: 1px solid;
                 max-width: 900px;
                 margin: 0 auto;
                 justify-content: flex-end;
+                margin-bottom: 2em;
 
                 button {
                     padding: 10px 20px;
@@ -380,6 +380,11 @@ main {
                     }
                 }
             }
+            .fale-conosco-wpp {
+                text-decoration: none;
+                color: #adff2f;
+               border: 1px solid #adff2f;
+            }
         }
     }
 }
@@ -391,10 +396,10 @@ footer {
     color: $white;
     background-color: black;
 
-    a{
+    a {
         color: white;
     }
-    .fas{
+    .fas {
         color: red;
     }
 }
