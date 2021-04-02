@@ -402,6 +402,9 @@ footer {
     .fas {
         color: red;
     }
+    span{
+        transition: .2s ease-in-out;
+    }
 }
 
 @media screen and (max-width: 655px) {
@@ -463,6 +466,14 @@ footer {
 
         #check:checked ~ ul {
             left: 0;
+        }
+    }
+}
+
+@media screen and(max-width:360px){
+    footer{
+        span{
+            font-size: .8rem;
         }
     }
 }
