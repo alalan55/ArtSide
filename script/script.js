@@ -103,8 +103,8 @@ mensagemDeSucesso = () => {
       check.checked ? (ul.style.left = "0") : (ul.style.left = "100%");
     },
 
-    scrollTop = () =>{
-       window.scrollTo(0,0);
+    scroolTop = () =>{
+       window.scrollTo(0,0)
     }
 
 form.addEventListener("submit", formEnviado);
