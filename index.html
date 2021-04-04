@@ -154,8 +154,13 @@
                     <div class="texto-error">
                         <h1>opa, algo deu errado.. tente novamente em instantes.</h1>
                     </div>
+
+                    <!-- inserir um warning, quando o campo campos validos no js for igual a false -->
+                    
                     <form id="form">
+                        <label for="nomeCompleto" id="errorNome" style="display: none; color: #ff6347;">Ops, preencha com o seu nome por favor</label>
                         <input type="text" placeholder="Nome completo" name="name" id="nomeCompleto">
+                        <label for="email" id="errorEmail" style="display: none; color: #ff6347;">Ops, preencha com o seu email por favor</label>
                         <input type="email" placeholder="E-mail" name="email" id="email">
                         <textarea name="message"  cols="30" rows="10"  id="mensagem"></textarea>
                         <div class="btn-enviar">
